@@ -11,7 +11,6 @@
                     <Link :href="route('home')" class="nav-link">Home</Link>
                     <Link :href="route('about')" class="nav-link">About</Link>
                 </div>
-                <!-- <h2>{{ $page.props.user }}</h2> -->
                 <Link :href="route('register')" class="nav-link">Register</Link>
             </nav>
         </header>

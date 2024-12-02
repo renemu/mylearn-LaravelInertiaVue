@@ -1,11 +1,13 @@
 <script setup>
 import { reactive } from "vue";
+import { router } from "@inertiajs/vue3";
 const state = reactive({
     formData: {},
 });
 
 const register = () => {
     console.log(state.formData);
+    router.post("/register", state.formData);
 };
 </script>
 <template>
